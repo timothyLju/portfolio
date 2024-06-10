@@ -1,0 +1,75 @@
+#contact {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px 20px;
+}
+
+.full-w {
+    grid-column: 1 / span 2;
+}
+
+input, textarea, button {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+
+button {
+    background-color: #0F6FC6;
+    color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center; /*space around*/
+    align-items: center;
+}
+
+.contact-container a {
+    text-decoration: none;
+    color: #404040;
+    margin: 25px;
+}
+
+a {
+    color: #404040;
+}
+
+.first-container {
+    position: absolute; 
+    top:30%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px){
+    #contact * {
+        grid-column: 1 / span 2;
+    }
+
+    .first-container {
+        top: 20%;
+        justify-content: center;
+    }
+}
+
+.confirmation {
+    width: 100%;
+    text-align: center;
+}
+
+.confirmation p {
+    font-size: 2em;
+    text-align: center;
+}

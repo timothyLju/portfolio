@@ -1,0 +1,135 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.topnav {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    margin: 0;
+    z-index: 1;
+}
+
+.logo {
+    float: left;
+}
+
+.links {
+    float: right;
+}
+
+.nav-content {
+    display: block;
+    padding: 20px 0px;
+}
+
+.nav-content a {
+    color: #404040;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 16px;
+    font-size: 1.25em;    
+}
+
+.links a:hover {
+    color: #0F6FC6;
+}
+
+.links a.active {
+    color: #0F6FC6;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .links {
+        display: none;
+    }
+    .mobile-menu {
+        float: right;
+        display: block;
+    }
+    .topnav {
+        max-height: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;
+        max-height: 500px;
+    }
+
+    .topnav.responsive .logo {
+        float: none;
+    }
+
+    .topnav.responsive .mobile-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive .links {
+        display: block;
+        float: none;
+        padding: 0;
+    }
+    
+    .topnav.responsive .links a {
+        display: block;
+        text-align: left;
+        padding: 0px 0 10px 25px;
+    }
+}
+
+.mobile-menu span {
+    font-size: 1.25em;
+    padding: 0px 16px;
+    color: #404040;
+    text-align: center;
+    text-decoration: none;
+}
+
+.content {
+    background-color: #f2f2f2;
+}
+
+.content p {
+    color: #404040;
+}
+
+.mark {
+    color: #0F6FC6;
+}
+
+.content {
+    padding: 16px;
+}
+
+@media screen and (min-width: 769px) {
+    .content {
+        padding: 0 10%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.title {
+    color: #0F6FC6;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+h2 {
+    color: #404040;
+    margin-bottom: 0;
+}
