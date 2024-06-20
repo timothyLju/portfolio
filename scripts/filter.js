@@ -11,16 +11,18 @@ var form = document.getElementById('form');
 var html = document.getElementById('HTML').checked;
 var css = document.getElementById('CSS').checked;
 var js = document.getElementById('JavaScript').checked;
-var php = document.getElementById('PHP').checked;
 var front_end = document.getElementById('front-end').checked;
-var back_end = document.getElementById('back-end').checked;
+var python = document.getElementById('Python').checked;
+var ml_ai = document.getElementById('ml_ai').checked;
 
 form.addEventListener('input', function (e) {
     html = document.getElementById('HTML').checked;
     css = document.getElementById('CSS').checked;
     js = document.getElementById('JavaScript').checked;
     front_end = document.getElementById('front-end').checked;
-    if (!html&&!css&&!js&&!front_end) {
+    python = document.getElementById('Python').checked;
+    ml_ai = document.getElementById('ml_ai').checked;
+    if (!html&&!css&&!js&&!front_end&&!python&&!ml_ai) {
         var cards = document.getElementsByClassName('project-card');
         for (i=0;i<cards.length;i++) {
             cards[i].style.display = "block";
@@ -48,22 +50,22 @@ form.addEventListener('input', function (e) {
                 js_cards[i].style.display = "block";
             }
         }
-        if (php) {
-            var php_cards = document.getElementsByClassName('PHP');
-            for (i=0;i<php_cards.length;i++) {
-                php_cards[i].style.display = "block";
-            }
-        }
         if (front_end) {
             var front_end_cards = document.getElementsByClassName('front-end');
             for (i=0;i<front_end_cards.length;i++) {
                 front_end_cards[i].style.display = "block";
             }
         }
-        if (back_end) {
-            var back_end_cards = document.getElementsByClassName('back-end');
-            for (i=0;i<back_end_cards.length;i++) {
-                back_end_cards[i].style.display = "block";
+        if (python) {
+            var python_cards = document.getElementsByClassName('python');
+            for (i=0;i<python_cards.length;i++) {
+                python_cards[i].style.display = "block";
+            }
+        }
+        if (ml_ai) {
+            var ml_ai_cards = document.getElementsByClassName('ml_ai');
+            for (i=0;i<ml_ai_cards.length;i++) {
+                ml_ai_cards[i].style.display = "block";
             }
         }
     }

@@ -9,11 +9,6 @@
     align-items: center;
 }
 
-.project-container::after {
-    content: "";
-    width: 20%;
-}
-
 .project-card {
     aspect-ratio: 1.618 / 1;
     background-color: #fff;
@@ -50,12 +45,6 @@
     .project-container {
         margin: 0 -10px;
     }
-
-    .project-container::after {
-        content: "";
-        width: 30%;
-        margin: 10px;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -65,12 +54,6 @@
     }
     .project-container {
         margin: 0 -10px;
-    }
-
-    .project-container::after {
-        content: "";
-        width: 46%;
-        margin: 10px;
     }
 }
 
